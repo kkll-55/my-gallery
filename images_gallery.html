@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>图片展示 - 微信图片</title>
+  <style>
+    body{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial; margin:0; padding:24px; background:#f7f7f9; color:#222}
+    .container{max-width:980px; margin:0 auto}
+    h1{font-size:20px; margin-bottom:12px}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px}
+    .card{background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(14,20,30,0.06); padding:12px; text-align:center}
+    .card img{max-width:100%; height:auto; border-radius:6px}
+    .meta{margin-top:10px; display:flex; gap:8px; justify-content:center; align-items:center}
+    .btn{display:inline-block; padding:8px 12px; border-radius:6px; background:#1e88e5; color:#fff; text-decoration:none; font-size:13px}
+    .btn.secondary{background:#4caf50}
+    footer{margin-top:18px; font-size:13px; color:#666}
+    @media (max-width:420px){body{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>三张微信图片展示</h1>
+    <p>点击图片可在新标签页打开原图，或使用下载按钮保存到本地。</p>
+
+    <div class="grid">
+      <div class="card">
+        <a href="sandbox:/mnt/data/image_links/微信图片_20251001142722.jpg" target="_blank">
+          <img src="sandbox:/mnt/data/image_links/微信图片_20251001142722.jpg" alt="微信图片_20251001142722" />
+        </a>
+        <div class="meta">
+          <a class="btn" href="sandbox:/mnt/data/image_links/微信图片_20251001142722.jpg" target="_blank">打开原图</a>
+          <a class="btn secondary" href="sandbox:/mnt/data/image_links/微信图片_20251001142722.jpg" download>下载</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="sandbox:/mnt/data/image_links/微信图片_20251001142653.jpg" target="_blank">
+          <img src="sandbox:/mnt/data/image_links/微信图片_20251001142653.jpg" alt="微信图片_20251001142653" />
+        </a>
+        <div class="meta">
+          <a class="btn" href="sandbox:/mnt/data/image_links/微信图片_20251001142653.jpg" target="_blank">打开原图</a>
+          <a class="btn secondary" href="sandbox:/mnt/data/image_links/微信图片_20251001142653.jpg" download>下载</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="sandbox:/mnt/data/image_links/微信图片_20251001142712.jpg" target="_blank">
+          <img src="sandbox:/mnt/data/image_links/微信图片_20251001142712.jpg" alt="微信图片_20251001142712" />
+        </a>
+        <div class="meta">
+          <a class="btn" href="sandbox:/mnt/data/image_links/微信图片_20251001142712.jpg" target="_blank">打开原图</a>
+          <a class="btn secondary" href="sandbox:/mnt/data/image_links/微信图片_20251001142712.jpg" download>下载</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>文件位置：<code>/mnt/data/image_links/</code></footer>
+  </div>
+</body>
+</html>
